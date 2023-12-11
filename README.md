@@ -53,7 +53,7 @@ You may need to change the data path to your own path first.
 
 Test a model on HITSZ-VCM dataset by 
   ```bash
-python test.py --dataset VCM --gpu 0 --resume 'YOUR_MODEL_PATH 
+python test.py --dataset VCM --gpu 0 --resume 'YOUR_MODEL_PATH' 
 ```
   - `--dataset`: utilize dataset "VCM"..
   
