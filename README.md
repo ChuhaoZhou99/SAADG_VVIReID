@@ -26,9 +26,10 @@ Method |Mode | Rank@1| mAP |
 
 Method |Mode | Rank@1| mAP |   
 |------| --------      | -----  |  -----  |
-| SAADG |Infrared to Visible    | 69.22%  | 53.77% | 
-|  |Visible to Infrared    | 73.13%  | 56.09% | 
+| SAADG |Infrared to Visible    | 69.22% (69.83%) | 53.77% (54.10%)| 
+|       |Visible to Infrared    | 73.13% (72.74%) | 56.09% (56.54%)| 
 
+Please refer to [Google Drive](https://drive.google.com/file/d/1oQ-zUZfAKTctBrmSOXVP_QI8_V4Uf0Q_/view?usp=drive_link) for the trained model weight. Note that we have re-organized and re-trained the model, so the performances might be slightly different from our paper. We have listed them into the parentheses, they are within the std margins and still achieve the state-of-the-arts.
 
 ### 1. Prepare the datasets.
 
