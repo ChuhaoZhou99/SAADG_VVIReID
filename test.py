@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 import torchvision
 import torchvision.transforms as transforms
 from eval_metrics import eval_sysu, eval_regdb, evaluate_test
-from model_SA_SAD_intra_inter_GDI_cv_cm_exp8 import embed_net
+from model import embed_net
 from utils import *
 from loss import OriTripletLoss
 from torch.optim import lr_scheduler
@@ -313,12 +313,12 @@ def test2():
     return cmc, mAP
 
 # testing
-cmc_1, mAP_1 = test1()
+cmc, mAP = test1()
 #---------visible to infrared---------
-# cmc_1, mAP_1 = test2()
+cmc_1, mAP_1 = test2()
 # log output
-# print('ir2rgb:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}'.format(
-#     cmc[0], cmc[4], cmc[9], cmc[19], mAP))
+print('ir2rgb:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}'.format(
+    cmc[0], cmc[4], cmc[9], cmc[19], mAP))
 
 print('rgb2ir:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}'.format(
     cmc_1[0], cmc_1[4], cmc_1[9], cmc_1[19], mAP_1))
