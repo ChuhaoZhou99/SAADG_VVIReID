@@ -24,12 +24,12 @@ Method |Mode | Rank@1| mAP |
 
 ### Results on the HITSZ-VCM Dataset
 
-Method |Mode | Rank@1| mAP |   
-|------| --------      | -----  |  -----  |
-| SAADG |Infrared to Visible    | 69.22% (69.83%) | 53.77% (54.10%)| 
-|       |Visible to Infrared    | 73.13% (72.74%) | 56.09% (56.54%)| 
+Method |Mode | Rank@1| mAP |   |
+|------| --------      | -----  |  -----  |  -----  |
+| SAADG |Infrared to Visible    | 69.22% (69.83%) | 53.77% (54.10%)|  [model](https://drive.google.com/file/d/1oQ-zUZfAKTctBrmSOXVP_QI8_V4Uf0Q_/view?usp=drive_link) |
+|       |Visible to Infrared    | 73.13% (72.74%) | 56.09% (56.54%)| |
 
-Please refer to [Google Drive](https://drive.google.com/file/d/1oQ-zUZfAKTctBrmSOXVP_QI8_V4Uf0Q_/view?usp=drive_link) for the trained model weight. Note that we have re-organized and re-trained the model, so the performances might be slightly different from our paper. We have listed them into the parentheses, they are within the std margins and still achieve the state-of-the-arts.
+Please refer to the [link](https://drive.google.com/file/d/1oQ-zUZfAKTctBrmSOXVP_QI8_V4Uf0Q_/view?usp=drive_link) for the trained model weights. Note that we have re-organized codes and re-trained the model, so the performances might be slightly different from our paper but they are within the std margins. We have listed them into the parentheses for your references.
 
 ### 1. Prepare the datasets.
 
